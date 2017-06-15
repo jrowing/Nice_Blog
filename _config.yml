@@ -4,7 +4,7 @@ name: Joe Rowing # your name
 email: joe@jrowing.com # your email address
 description: >
     All views my own. # this means to ignore newlines until "baseurl:"
-baseurl: "/" # the subpath of your site, e.g. /blog
+baseurl: "jrowing.com/" # the subpath of your site, e.g. /blog
 url: "http://jrowing.com/" # the base hostname & protocol for your site
 twitter_username: jrowing # your Twitter username
 github_username: jrowing # your Github username
