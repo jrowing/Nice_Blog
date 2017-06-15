@@ -3,7 +3,7 @@ layout: post
 title: "The Drake Equation"
 subtitle: "Working out the probabilities..."
 date: 2017-03-21
-author: Benjamin
+author: Joe
 category: teaching
 tags: teaching maths
 finished: true
