@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "The Drake Equation"
-subtitle: "A simple Jekyll blog theme."
+subtitle: "Working out the probabilities..."
 date: 2017-03-21
 author: Benjamin
 category: teaching
