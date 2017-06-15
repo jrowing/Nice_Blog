@@ -15,9 +15,11 @@ layout: default
 <center>
 	<p class="index-content">Hello World</p>
 
-	{% for post in site.posts limit:1 %}
-	... Show the first post all big ...
-	{% endfor %}
+	<div class="blog-index">
+  {% assign post = site.posts.first %}
+  {% assign content = post.content %}
+  {% include post_detail.html %}
+</div>
 
 
 </center>
