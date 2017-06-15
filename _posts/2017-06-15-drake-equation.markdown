@@ -18,7 +18,7 @@ The number of communicating civilisations in our galaxy, N, is:
 
 In this equation:
 
-1.	$S$' represents the number of stars in the Milky Way Galaxy (approx 100 billion, or 109).  The fact that the Drake Equation and the Search for Extra Terrestrial Intelligence (SETI) is restricted to the Milky Way galaxy gives an opportunity to teach the scale of space and the speed of light, and thus the reason that no-one is looking outside of our galaxy for intelligent alien life.
+1.	'$S$' represents the number of stars in the Milky Way Galaxy (approx 100 billion, or 109).  The fact that the Drake Equation and the Search for Extra Terrestrial Intelligence (SETI) is restricted to the Milky Way galaxy gives an opportunity to teach the scale of space and the speed of light, and thus the reason that no-one is looking outside of our galaxy for intelligent alien life.
 
 2.	$f_{p}$ is the fraction of stars that have planets around them (estimates range from 20% to 50%).  
 
