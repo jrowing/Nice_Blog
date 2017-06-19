@@ -1,18 +1,93 @@
-# Site settings
-title: JRowing
-name: Joe Rowing # your name
-email: joe@jrowing.com # your email address
-description: All views my own. # this means to ignore newlines until "baseurl:"
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://jrowing.com" # the base hostname & protocol for your site
-twitter_username: jrowing # your Twitter username
-github_username: jrowing # your Github username
-disqus_username: jrowing # your disqus username
+# # # # # # # # # # # # #
+#   K i k o - p l u s   #
+# # # # # # # # # # # # #
 
-google-analytics:  # add it if you have one
+# Basic
+name:               "Kiko Plus"
 
-skillstree: false # turn on or off the skills tree in about page
+author:
+  facebook:         your-id
+  youtubeUser:      your-id
+  youtubeChannel:   your-id
+  twitter:          jrowing
+  github:           jrowing
+  stackoverflow:    your-id
+  quora:            your-id
+  linkedin:         your-id
+  pinterest:        your-id
+  googlePlus:       your-id
+  instagram:        your-id
+  reddit:           your-id
+  medium:           your-id
+  tumblr:           your-id
+  email:            joe@jrowing.com
 
-# Build settings
-permalink: none
-markdown: kramdown
+copyright:
+  year:             2017
+  name:             JRowing
+
+# Google-analytics
+google-analytics:
+  id:               ""
+
+# Disqus
+disqus:
+  id:               "jrowing"
+
+# URL
+url:                "http://jrowing.com" # the base hostname & protocol for your site
+# url:                "http://localhost:4000" # use this url when you develop
+baseurl:            "" # the subpath of your site, e.g. /blog
+
+
+# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone:           	GMT0
+permalink:          /:year-:month-:day/:title/
+
+# Pagination
+paginate:           5
+paginate_path:      /page:num/
+
+# Markdown
+markdown:           kramdown
+kramdown:
+  input:            GFM
+
+# Navigation
+nav:
+  - name:           "About"
+    url:            "/about"
+  - name:           "Archive"
+    url:            "/archive"
+  - name:           "Tags"
+    url:            "/tags"
+  - name:           "Github"
+    url:            "http://jrowing.com"
+
+# Sass
+sass:
+  sass_dir:         _sass
+  style:            :compressed
+
+# Scopes
+defaults:
+  -
+    scope:
+      path:         ""
+      type:         "pages"
+    values:
+      layout:       "page"
+  -
+    scope:
+      path:         ""
+      type:         "posts"
+    values:
+      layout:       "post"
+
+# jekyll-seo-tag, see: http://www.rubydoc.info/gems/jekyll-seo-tag/1.2.0
+gems:
+  - jekyll-seo-tag
+  - jekyll-paginate
+  - jekyll-admin
+
+exclude:            [vendor]
