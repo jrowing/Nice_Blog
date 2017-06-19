@@ -1,20 +1,14 @@
 ---
 layout: default
-title: Page not Found
 permalink: /404.html
+title: 404 Not Found
 ---
-
-<style>
-
-.index-content {
-	margin-top: 30%;
-	margin-bottom: 30%;
-	font-size: 18px;
-}
-
-</style>
-
-<center>
-	<p class="index-content">Page not Found</p>
-</center>
-
+<header>
+  <h1 class="header-small">
+    <a href="{{site.url}}{{site.baseurl}}">{{ site.name }}</a>
+  </h1>
+</header>
+<div class="page">
+  <h1 class="page-title">{{ page.title }}</h1>
+  <span>Sorry, but the page you were trying to view does not exist.</span>
+</div>
