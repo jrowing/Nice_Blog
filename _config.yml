@@ -3,23 +3,23 @@
 # # # # # # # # # # # # #
 
 # Basic
-name:               "Kiko Plus"
+name:               "JRowing.com"
 
 author:
-  facebook:         your-id
-  youtubeUser:      your-id
-  youtubeChannel:   your-id
+#  facebook:         your-id
+#  youtubeUser:      your-id
+#  youtubeChannel:   your-id
   twitter:          jrowing
   github:           jrowing
-  stackoverflow:    your-id
-  quora:            your-id
-  linkedin:         your-id
-  pinterest:        your-id
-  googlePlus:       your-id
-  instagram:        your-id
-  reddit:           your-id
-  medium:           your-id
-  tumblr:           your-id
+#  stackoverflow:    your-id
+#  quora:            your-id
+  linkedin:         jrowing
+#  pinterest:        your-id
+#  googlePlus:       your-id
+#  instagram:        your-id
+#  reddit:           your-id
+#  medium:           your-id
+#  tumblr:           your-id
   email:            joe@jrowing.com
 
 copyright:
@@ -62,7 +62,7 @@ nav:
   - name:           "Tags"
     url:            "/tags"
   - name:           "Github"
-    url:            "http://jrowing.com"
+    url:            "https://github.com/jrowing"
 
 # Sass
 sass:
