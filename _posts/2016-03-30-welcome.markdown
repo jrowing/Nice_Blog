@@ -2,7 +2,7 @@
 date: "2016-03-30"
 subtitle: A simple Jekyll blog theme.
 finished: true
-tags: "hello world"
+tags: misc
 layout: post
 category: Jekyll
 title: Welcome
