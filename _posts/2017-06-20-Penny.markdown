@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Penny... Penny... Penny..."
-description: "A neat model of a random decay"
+description: "Lessons from TV..."
 date: 2017-06-20
 tags: [teaching, physics]
 comments: true
