@@ -3,13 +3,10 @@ layout: post
 title: "Woah!"
 date: 2017-07-06
 description: "The physics of viral videos and other fun things..."
-
 ---
 
 
-# Woah!
 
----
 ![](https://filedb.experts-exchange.com/incoming/2015/11_w46/1008861/macbook-air-balloon.jpg)
 
 ---
