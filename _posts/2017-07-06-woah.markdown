@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Woah! 
+title: "Woah!"
 date: 2017-07-06
-excerpt: The physics of viral videos and other fun things...
+description: "The physics of viral videos and other fun things..."
 
 ---
 
