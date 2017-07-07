@@ -1,0 +1,7 @@
+---
+layout: post
+title: Woah! 
+date: 2017-07-06
+excerpt: The physics of viral videos and other fun things...
+link: http://snacktime.fm/episodes/2016/6/9/episode-3-negroni-week
+---
