@@ -104,7 +104,8 @@ pl1 = list_plot(pop_avg,plotjoined=True,marker='+',legend_label='averaged',axes_
 pl2 = list_plot(model,plotjoined=True,linestyle='--',color='red',marker='x',legend_label='model')
 
 show(pl1+pl2)
-</script>
+</div>
+
 
 
 8.	Plot a graph of ‘average dice before throw Nav’ against ‘number of throw, t’ and calculate the ‘half-life’ of the dice in terms of throws.
