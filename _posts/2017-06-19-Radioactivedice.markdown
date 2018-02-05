@@ -103,7 +103,7 @@ model = (1-p)**arange(n_rolls+1)*P0
 pl1 = list_plot(pop_avg,plotjoined=True,marker='+',legend_label='averaged',axes_labels=['roll #', '# dice'])
 pl2 = list_plot(model,plotjoined=True,linestyle='--',color='red',marker='x',legend_label='model')
 
-#show(pl1+pl2)
+show(pl1+pl2)
 
             </script>
 
