@@ -38,10 +38,28 @@ Throw number (t); Average number of dice before throw (Nav); ln (Nav)
 
 7.	The decrease in the number of dice left after each throw is analogous to the decay of unstable nuclei. Each throw number represents the passage of a certain amount of time, for example 1 second. A graph of ‘average dice after throw’ against ‘number of throw’ would look the same as a graph of ‘number of nuclei left’ against ‘time’ such as you should have come across at GCSE. From this graph you should know how to calculate a half-life value.
 
-<div>
-    <a href="https://plot.ly/~jrowing/19/?share_key=EkXmP5hFChot99faHWILYy" target="_blank" title="Plot 19" style="display: block; text-align: center;"><img src="https://plot.ly/~jrowing/19.png?share_key=EkXmP5hFChot99faHWILYy" alt="Plot 19" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
-    <script data-plotly="jrowing:19" sharekey-plotly="EkXmP5hFChot99faHWILYy" src="https://plot.ly/embed.js" async></script>
-</div>
+<div class="sage">
+            <script type="text/x-sage">
+c, t = var('c t')
+
+# position of rat
+r = 0.5*t + 0.5*sin(5*t)+2
+
+# velocity function for ode
+v = 0.5*(tanh(5*((r-c)-1))+1)
+
+# initial position of cat
+c0 = 0
+
+# solve the ode
+s = desolve_rk4(v, c, step=.01, ics=(0,c0), end_points=[0,10])
+
+p  = plot( r, (t,0,10), legend_label="rat" )
+p += list_plot(s, plotjoined=True, color="red", legend_label="cat")
+
+p.show(axes_labels=("time","position"))
+            </script>
+
 
 8.	Plot a graph of ‘average dice before throw Nav’ against ‘number of throw, t’ and calculate the ‘half-life’ of the dice in terms of throws.
 9.	Plot a graph of ‘ln (Nav)’ against ‘number of throw, t’.
