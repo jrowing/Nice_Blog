@@ -40,7 +40,7 @@ Throw number (t); Average number of dice before throw (Nav); ln (Nav)
 
 Use the code below to try it out:
 <div class="sage">
-            <script type="text/x-sage">
+            
 # -*- coding: utf-8 -*-
 """
 Created on Thu Feb  1 10:29:18 2018
@@ -104,8 +104,7 @@ pl1 = list_plot(pop_avg,plotjoined=True,marker='+',legend_label='averaged',axes_
 pl2 = list_plot(model,plotjoined=True,linestyle='--',color='red',marker='x',legend_label='model')
 
 show(pl1+pl2)
-
-            </script>
+</script>
 
 
 8.	Plot a graph of ‘average dice before throw Nav’ against ‘number of throw, t’ and calculate the ‘half-life’ of the dice in terms of throws.
