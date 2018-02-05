@@ -38,26 +38,73 @@ Throw number (t); Average number of dice before throw (Nav); ln (Nav)
 
 7.	The decrease in the number of dice left after each throw is analogous to the decay of unstable nuclei. Each throw number represents the passage of a certain amount of time, for example 1 second. A graph of ‘average dice after throw’ against ‘number of throw’ would look the same as a graph of ‘number of nuclei left’ against ‘time’ such as you should have come across at GCSE. From this graph you should know how to calculate a half-life value.
 
+Use the code below to try it out:
 <div class="sage">
             <script type="text/x-sage">
-c, t = var('c t')
+# -*- coding: utf-8 -*-
+"""
+Created on Thu Feb  1 10:29:18 2018
 
-# position of rat
-r = 0.5*t + 0.5*sin(5*t)+2
+@author: joe
+"""
 
-# velocity function for ode
-v = 0.5*(tanh(5*((r-c)-1))+1)
+# some library objects we need
+import matplotlib as mpl
+mpl.use('Agg')
+from numpy.random import binomial, seed
+from numpy import zeros, arange
+from matplotlib import pyplot as plt
+# initial population
+P0 = 50
+fig = plt.figure(figsize=(10, 8))
+# number of rolls per experiment
+n_rolls = 50
 
-# initial position of cat
-c0 = 0
+# number of experiments
+n_exp = 1
 
-# solve the ode
-s = desolve_rk4(v, c, step=.01, ics=(0,c0), end_points=[0,10])
+# probability that any given die will "decay" on a given roll
+p = 0.1
 
-p  = plot( r, (t,0,10), legend_label="rat" )
-p += list_plot(s, plotjoined=True, color="red", legend_label="cat")
+# location to track average dice remaining for each roll number
+pop_avg = zeros(n_rolls+1)
 
-p.show(axes_labels=("time","position"))
+# "seed" the random number generator
+# (This makes the results look different
+# each time the code is run.)
+seed()
+
+# loop over experiments
+for n in range(n_exp):
+    
+    # reset the dice population
+    P = P0
+
+    # roll the dice
+    for k in range(1,n_rolls+1):
+    
+        # figure out how many dice decay this time
+        r = binomial(P,p)
+    
+        # remove the dice
+        P -= r
+    
+        # update the average
+        pop_avg[k] += P
+    
+# final division to compute the averages
+pop_avg /= n_exp
+
+# we always started with P0
+pop_avg[0] = P0
+
+# compute the model predictions
+model = (1-p)**arange(n_rolls+1)*P0
+pl1 = list_plot(pop_avg,plotjoined=True,marker='+',legend_label='averaged',axes_labels=['roll #', '# dice'])
+pl2 = list_plot(model,plotjoined=True,linestyle='--',color='red',marker='x',legend_label='model')
+
+#show(pl1+pl2)
+
             </script>
 
 
