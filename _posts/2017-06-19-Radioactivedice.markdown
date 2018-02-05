@@ -37,7 +37,17 @@ This is throw number, t = 1 with dice number N = 50.
 Throw number (t); Average number of dice before throw (Nav); ln (Nav)
 
 7.	The decrease in the number of dice left after each throw is analogous to the decay of unstable nuclei. Each throw number represents the passage of a certain amount of time, for example 1 second. A graph of ‘average dice after throw’ against ‘number of throw’ would look the same as a graph of ‘number of nuclei left’ against ‘time’ such as you should have come across at GCSE. From this graph you should know how to calculate a half-life value.
+8.	Plot a graph of ‘average dice before throw Nav’ against ‘number of throw, t’ and calculate the ‘half-life’ of the dice in terms of throws.
+9.	Plot a graph of ‘ln (Nav)’ against ‘number of throw, t’.
+	This graph should be a straight line of negative gradient.
 
+10.	Measure the gradient of your second graph, it is equal to the NEGATIVE of the decay constant,  of the dice.
+11.	Explain why you would expect the decay constant to equal 1/6th.
+12.	See if your half-life value is equal to ln (2) /   as would be expected from theory.
+13.	Why would this experiment would give better results if more dice were used?
+14.	What would you expect your values of ‘half-life’ and ‘decay constant’ to be if:
+	(a) dice with ‘5’ as well as ‘6’ were removed.
+	(b) dice with ‘4’, ‘5’ & ‘6’ were removed.
 Use the code below to try it out:
 <div class="sage">
             
@@ -106,16 +116,3 @@ pl2 = list_plot(model,plotjoined=True,linestyle='--',color='red',marker='x',lege
 show(pl1+pl2)
 </script>
 </div>
-
-
-8.	Plot a graph of ‘average dice before throw Nav’ against ‘number of throw, t’ and calculate the ‘half-life’ of the dice in terms of throws.
-9.	Plot a graph of ‘ln (Nav)’ against ‘number of throw, t’.
-	This graph should be a straight line of negative gradient.
-
-10.	Measure the gradient of your second graph, it is equal to the NEGATIVE of the decay constant,  of the dice.
-11.	Explain why you would expect the decay constant to equal 1/6th.
-12.	See if your half-life value is equal to ln (2) /   as would be expected from theory.
-13.	Why would this experiment would give better results if more dice were used?
-14.	What would you expect your values of ‘half-life’ and ‘decay constant’ to be if:
-	(a) dice with ‘5’ as well as ‘6’ were removed.
-	(b) dice with ‘4’, ‘5’ & ‘6’ were removed.
